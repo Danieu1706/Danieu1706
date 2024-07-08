@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo</title>
+    <link rel="stylesheet" href="style.css">
+</head> 
+<body>
+    
+    <div class="container" id="cabeçalho">
+         <img src="palmeirasLogo.jpg" alt="">
+         <p>
+             O Palmeiras é o maior time do Brasil, maior campeao do campeonato brasileiro, quatro vezes campeao da copa do Brasil, tricampeao da copa commembol libertadores, primeiro campeao mundial em 1951, segundo maior campeao do campeonato paulista com 26 conquistas, atual tricampeao da competição  
+         </p>
+    </div>
+
+<br>
+<br>
+<br>
+
+<div class="colunas-container">
+    <div class="coluna">
+    <p>
+       serviços
+    </p>
+</div></div>
+
+<div class="coluna">
+    <p>ai bolsonaro.11111111111111111111111111111111111111111111111111111111111111111111111111111111111111</p>
+    <p>Toma lula</p>
+  </div>
+
+  <div class="imagem-container">
+    <img src="camisaUm.jpeg" alt="">
+    <img src="camisaDois.jpg" alt="">
+  </div>
+
+</body>
+</html>
