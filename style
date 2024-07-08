@@ -1,67 +1,82 @@
-/* Reset de estilos básicos */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+body{
+    font-family: arial;
+     /* Utiliza um degradê de azul para verde como cor de fundo */
+     background: linear-gradient(to right, lightgreen, white); 
+     /* Garante que o degradê cubra toda a página */
+     height: 100vh;
+     margin: 0;
 }
 
-/* Estilo para o corpo da página */
-body {
-  font-family: Arial, sans-serif;
-  background: linear-gradient(to right, lightgreen, white);
-  margin: 0;
-  padding: 20px;
+
+     #cabeçalho{
+    font-size: 16px;
+    color: green;
+    width: 65%;
+}
+     .container {
+    display: flex; /* Utiliza o flexbox para alinhar os itens lado a lado */
+    align-items: center; /* Alinha verticalmente os itens ao centro */
+    justify-content: center; /* Centraliza horizontalmente a div */
+    text-align: center  ; /* Alinha o texto dentro da div ao centro */
+    margin-top: 20px; /* Espaçamento superior para afastar do topo */
+}
+  
+     .container img {
+    width: 380px; /* Define a largura da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-right: 20px; /* Espaçamento entre a imagem e o texto */
+    margin-left: 45%;
 }
 
-/* Estilos para o cabeçalho */
-#cabeçalho {
-  text-align: center;
-  margin-bottom: 20px;
+.imagem-container { 
+    display: flex; /* Utiliza flexbox para alinhar os itens lado a lado */
+    justify-content: center; /* Centraliza os itens na horizontal */
+    align-items: center; /* Centraliza os itens na vertical */
+    gap: 20px; /* Espaçamento entre as imagens */
+    margin-top: 20px;
 }
-
-.container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-.container img {
-  max-width: 100%;
-  height: auto;
-  margin-right: 20px;
-}
-
-/* Estilos para as colunas */
-.colunas-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  margin-bottom: 20px;
+  
+  .imagem-container img {   
+    max-width: 100%; /* Garante que as imagens não ultrapassem o tamanho do container */
+    height: auto; /* Mantém a proporção da imagem */
 }
 
 .coluna {
-  flex: 1;
-  background-color: rgba(248, 242, 242, 0.39);
-  padding: 10px;
-  border-radius: 5px;
-  text-align: justify;
-  max-width: 400px; /* Limita a largura máxima das colunas */
-}
+    display: flex; /* Utiliza flexbox para alinhar os itens lado a lado */
+    justify-content: space-between; /* Distribui os itens igualmente ao longo da linha */
+    align-items: flex-start; /* Alinha os itens no topo */
+    gap: 20px; /* Espaçamento entre as colunas */
+    width: 80%; /* Largura total do container */
+    margin: 0 auto; /* Centraliza o container na página */
+  }
+  
+  .coluna {
+    flex: 1; /* As colunas ocupam todo o espaço disponível */
+    background-color: rgba(248, 242, 242, 0.39); /* Cor de fundo apenas para visualização */
+    padding: 10px; /* Espaçamento interno das colunas */
+    border-radius: 5px; /* Borda arredondada */
+    text-align: justify; /* Justifica o texto */
+  }
+/* Media query para dispositivos menores */
+@media screen and (min-width: 768px) {
+  .container {
+      flex-direction: row; /* Retorna ao layout de linha em telas maiores */
+  }
 
-/* Estilos para as imagens */
-.imagem-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 20px;
-  margin-bottom: 20px;
-}
+  .container img {
+      width: 380px; /* Volta ao tamanho original da imagem */
+      margin-bottom: 0; /* Remove o espaçamento inferior */
+  }
 
-.imagem-container img {
-  max-width: 100%;
-  height: auto;
-  max-height: 300px; /* Limita a altura máxima das imagens */
+  .coluna {
+    flex: 1; /* As colunas ocupam todo o espaço disponível */
+    background-color: rgba(248, 242, 242, 0.39); /* Cor de fundo apenas para visualização */
+    padding: 10px; /* Espaçamento interno das colunas */
+    border-radius: 5px; /* Borda arredondada */
+    text-align: justify; /* Justifica o texto */
+  }
+
+  .imagem-container {
+      margin-top: 0; /* Remove o espaçamento superior */
+  }
 }
